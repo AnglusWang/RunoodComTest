@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jeson.relativelayout.MainActivity">
+
+    <Button
+        android:id="@+id/center_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button1"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/above_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/center_bt"
+        android:layout_centerInParent="true"
+        android:text="Button2"/>
+
+    <Button
+        android:id="@+id/below_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/center_bt"
+        android:layout_centerInParent="true"
+        android:text="Button3"/>
+
+    <Button
+        android:id="@+id/left_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/center_bt"
+        android:layout_centerInParent="true"
+        android:text="Button4"/>
+
+    <Button
+        android:id="@+id/up_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/center_bt"
+        android:layout_centerInParent="true"
+        android:text="Button5"/>
+
+</RelativeLayout>
