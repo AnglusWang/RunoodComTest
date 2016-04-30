@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow>
+
+        <Button
+            android:text="0"/>
+
+        <Button
+            android:text="1"/>
+
+        <Button
+            android:text="2"/>
+
+        <Button
+            android:text="3"/>
+
+        <Button
+            android:text="4"/>
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="column"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="first"
+            android:background="#00ddff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="second"
+            android:background="#aa00ff"/>
+
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="first"
+            android:background="#00ddff"/>
+
+        <TextView />
+
+        <TextView
+            android:layout_span="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="span_2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="second"
+            android:background="#aa00ff"/>
+
+    </TableRow>
+</TableLayout>
