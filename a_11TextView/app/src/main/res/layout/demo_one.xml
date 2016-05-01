@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/txtOne"
+        android:layout_width="200dp"
+        android:layout_height="64dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="矩形边框的TextView"
+        android:background="@drawable/border_xml"/>
+
+    <TextView
+        android:id="@+id/txtTwo"
+        android:layout_width="200dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="@drawable/circle_border"
+        android:text="圆角边框的TextView" />
+
+</LinearLayout>
