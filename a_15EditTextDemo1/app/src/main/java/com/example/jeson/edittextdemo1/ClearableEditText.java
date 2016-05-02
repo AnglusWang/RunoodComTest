@@ -83,7 +83,11 @@ public class ClearableEditText extends AppCompatEditText {
      * 显示/隐藏删除按钮
      */
     private void setClearIconVisible(boolean visible) {
-        setCompoundDrawables(getCompoundDrawables()[DRAWABLE_LEFT], getCompoundDrawables()[DRAWABLE_TOP],
-                visible ? mClearDrawable : null, getCompoundDrawables()[DRAWABLE_BOTTOM]);
+        setCompoundDrawables(
+                getCompoundDrawables()[DRAWABLE_LEFT],
+                getCompoundDrawables()[DRAWABLE_TOP],
+                visible ? mClearDrawable : null,
+                getCompoundDrawables()[DRAWABLE_BOTTOM]
+        );
     }
 }
