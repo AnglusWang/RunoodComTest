@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jeson.edittext.MainActivity">
+
+    <!--设置提示文本和提示文本的颜色-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="这里是提示文本"
+        android:textColorHint="@color/colorAccent" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:selectAllOnFocus="true"
+        android:hint="获取焦点后可以全选文本" />
+
+    <!--限制文本输入类型-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入类型限定为number类型"
+        android:inputType="number"/>
+
+    <!--margin and padding-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="margin left(40) and padding left(20)"
+        android:layout_marginLeft="40dp"
+        android:paddingLeft="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="只能输入两行"
+        android:maxLines="2"/>
+
+    <!--字体间距调整-->
+    <!--capitlize已经不用，被inputType所代替-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="字体间距有变化"
+        android:capitalize="words"
+        android:maxLines="3"
+        android:scaleX="0.5"
+        android:scaleY="1"/>
+
+    <EditText
+        android:id="@+id/et_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:imeOptions="actionDone"
+        android:hint="获取焦点弹出小键盘"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="光标不显示"
+        android:cursorVisible="false"/>
+
+</LinearLayout>
