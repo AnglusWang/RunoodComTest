@@ -6,4 +6,7 @@
     <color name="color1">#9933ff</color>
     <color name="color2">#ff9933</color>
     <color name="color3">#99ff33</color>
+    <color name="reveal_color">#FFFFFF</color>
+    <color name="bottom_color">#3086E4</color>
+    <color name="bottom_bg">#40BAF8</color>
 </resources>
