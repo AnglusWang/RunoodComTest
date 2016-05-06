@@ -12,13 +12,14 @@
         android:background="@drawable/pt2" />
 
     <ImageView
+        android:id="@+id/pen_bg"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/pt2" />
+        android:background="@drawable/pen_bg" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:src="@drawable/pt2" />
 
     <ImageView

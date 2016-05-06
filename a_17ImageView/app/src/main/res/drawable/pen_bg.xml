@@ -1,0 +1,7 @@
+<bitmap
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/pen_bg"
+    android:gravity="top"
+    android:src="@drawable/pt2"
+    android:tileMode="disabled" >
+</bitmap>
