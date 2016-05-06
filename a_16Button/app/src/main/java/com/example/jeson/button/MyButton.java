@@ -12,6 +12,10 @@ import android.widget.ImageButton;
 /**
  * Created by Jeson on 2016/5/6.
  * 实现Material Design水波效果的Button
+ * 实现逻辑：
+    1.我们继承ImageButton，当然你可以换成Button或者View,这里笔者想把龟放到中间才继承ImageButton
+    2.首先，创建两个Paint(画笔)对象，一个绘制底部背景颜色，一个绘制波纹扩散的
+    3.接着计算最大半径，开始半径每隔一段时间递增一次，直到等于最大半径，然后重置状态！
  */
 public class MyButton extends ImageButton {
     private static final int INVALIDATE_DURATION = 15;     //每次刷新的时间间隔
