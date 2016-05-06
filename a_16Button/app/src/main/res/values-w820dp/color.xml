@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bbutton_danger_pressed">#FF3300</color>
+    <color name="bbutton_danger_edge">#FF4400</color>
+    <color name="bbutton_danger_disabled">#FF5500</color>
+    <color name="bbutton_danger_disabled_edge">#FF6600</color>
+    <color name="bbutton_danger">#FF7700</color>
+    <color name="text_font_white">#FFFFFF</color>
+</resources>

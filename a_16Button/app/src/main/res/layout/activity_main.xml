@@ -10,8 +10,8 @@
         android:id="@+id/btnOne"
         android:layout_width="match_parent"
         android:layout_height="64dp"
-        android:background="@drawable/btn_bg1"
-        android:text="按钮"/>
+        android:background="@drawable/bbuton_danger_rounded"
+        android:text="登录"/>
 
 
     <Button
@@ -19,4 +19,5 @@
         android:layout_width="match_parent"
         android:layout_height="64dp"
         android:text="按钮不可用"/>
+
 </LinearLayout>
