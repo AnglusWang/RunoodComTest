@@ -9,6 +9,12 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:src="@drawable/pt1"
+        android:background="#FF0000"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="@drawable/pt2" />
 
     <ImageView
