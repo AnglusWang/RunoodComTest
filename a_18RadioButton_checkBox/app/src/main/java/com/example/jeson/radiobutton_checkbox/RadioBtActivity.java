@@ -31,8 +31,11 @@ public class RadioBtActivity extends Activity {
             @Override
             public void onClick(View v) {
                 RadioGroup radiogroup = (RadioGroup) findViewById(R.id.radio_group);
+                //getChildCount()获得按钮组中的单选按钮的数目
                 for (int i = 0; i < radiogroup.getChildCount(); i++) {
+                    //getChildAt(i):根据索引值获取我们的单选按钮
                     RadioButton radiobt = (RadioButton) radiogroup.getChildAt(i);
+                    //isChecked( ):判断按钮是否选中
                     if (radiobt.isChecked()) {
                         Toast.makeText(getApplicationContext(), "点击了提交按钮，你选的是：" + radiobt.getText(), Toast.LENGTH_SHORT).show();
                         break;
