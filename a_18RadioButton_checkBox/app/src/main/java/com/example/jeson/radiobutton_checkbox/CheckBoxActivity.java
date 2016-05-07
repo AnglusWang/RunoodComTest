@@ -36,6 +36,11 @@ public class CheckBoxActivity extends Activity
         checkbox2.setOnCheckedChangeListener(this);
         checkbox3.setOnCheckedChangeListener(this);
         bt_send.setOnClickListener(this);
+
+        //在Java代码中修改文字与选择框之间的距离
+        checkbox3.setButtonDrawable(R.drawable.selector);
+        int bt_paddingLeft = 20;
+        checkbox3.setPadding(bt_paddingLeft, 0, 0, 0);
     }
 
     @Override
