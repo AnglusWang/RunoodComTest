@@ -16,19 +16,22 @@
         android:id="@+id/checkbox1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Java核心卷I" />
+        android:text="Java核心卷I"
+        android:button="@drawable/selector"/>
 
     <CheckBox
         android:id="@+id/checkbox2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Java核心卷II"/>
+        android:text="Java核心卷II"
+        android:button="@drawable/selector"/>
 
     <CheckBox
         android:id="@+id/checkbox3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Java编程思想"/>
+        android:text="Java编程思想"
+        android:button="@drawable/selector"/>
 
     <Button
         android:id="@+id/bt_send"
