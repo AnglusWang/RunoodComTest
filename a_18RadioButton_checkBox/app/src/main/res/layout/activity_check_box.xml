@@ -17,7 +17,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Java核心卷I"
-        style="@style/MyCheckBox"/>
+        android:button="@null"
+        android:drawableTop="@android:drawable/btn_star"/>
 
     <CheckBox
         android:id="@+id/checkbox2"
