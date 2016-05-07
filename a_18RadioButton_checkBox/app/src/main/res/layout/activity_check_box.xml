@@ -32,7 +32,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Java编程思想"
-        style="@style/MyCheckBox"/>
+        style="@style/MyCheckBox"
+        android:paddingLeft="10dp"/>
 
     <Button
         android:id="@+id/bt_send"
