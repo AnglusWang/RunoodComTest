@@ -2,6 +2,8 @@ package com.example.jeson.radiobutton_checkbox;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -15,12 +17,27 @@ public class RadioBtActivity extends Activity {
 
         //获取RadioButton选择的值
             //方法一：
-        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radio_group);
+        final RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radio_group);
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 RadioButton radiobt = (RadioButton) findViewById(checkedId);
                 Toast.makeText(getApplicationContext(), "按钮发生变化，你选择了："+radiobt.getText(), Toast.LENGTH_SHORT).show();
+            }
+        });
+            //方法二：
+        Button button = (Button) findViewById(R.id.bt_post);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                RadioGroup radiogroup = (RadioGroup) findViewById(R.id.radio_group);
+                for (int i = 0; i < radiogroup.getChildCount(); i++) {
+                    RadioButton radiobt = (RadioButton) radiogroup.getChildAt(i);
+                    if (radiobt.isChecked()) {
+                        Toast.makeText(getApplicationContext(), "点击了提交按钮，你选的是：" + radiobt.getText(), Toast.LENGTH_SHORT).show();
+                        break;
+                    }
+                }
             }
         });
     }
