@@ -11,7 +11,10 @@
     <DatePicker
         android:id="@+id/my_dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:calendarTextColor="#ff6633"
+        android:dayOfWeekBackground="#99ff00"
+        android:yearListSelectorColor="#ff99ee">
 
     </DatePicker>
 </LinearLayout>

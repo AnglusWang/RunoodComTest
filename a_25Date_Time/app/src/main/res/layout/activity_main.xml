@@ -6,11 +6,4 @@
     android:layout_height="match_parent"
     tools:context="com.example.jeson.date_time.MainActivity">
 
-    <DatePicker
-        android:id="@+id/my_dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:datePickerMode="calendar">
-
-    </DatePicker>
 </RelativeLayout>
