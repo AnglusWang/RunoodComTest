@@ -2,8 +2,6 @@ package com.example.jeson.adapter;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,10 +16,10 @@ public class MainActivity extends AppCompatActivity {
 //        ListView my_lv = (ListView) findViewById(R.id.my_lv);
 //        my_lv.setAdapter(my_adapter);
 
-        ArrayAdapter<CharSequence> my_adapter =
-                ArrayAdapter.createFromResource(this, R.array.my_menus, android.R.layout.simple_expandable_list_item_1);
-
-        ListView my_lv = (ListView) findViewById(R.id.my_lv);
-        my_lv.setAdapter(my_adapter);
+//        ArrayAdapter<CharSequence> my_adapter =
+//                ArrayAdapter.createFromResource(this, R.array.my_menus, android.R.layout.simple_expandable_list_item_1);
+//
+//        ListView my_lv = (ListView) findViewById(R.id.my_lv);
+//        my_lv.setAdapter(my_adapter);
     }
 }
