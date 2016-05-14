@@ -10,8 +10,7 @@
     <ListView
         android:id="@+id/my_lv"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:entries="@array/my_menus">
+        android:layout_height="wrap_content">
 
     </ListView>
 </LinearLayout>
