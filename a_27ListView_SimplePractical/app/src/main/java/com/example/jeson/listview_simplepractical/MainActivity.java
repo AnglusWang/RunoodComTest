@@ -11,8 +11,12 @@ import android.text.method.LinkMovementMethod;
 import android.text.style.BackgroundColorSpan;
 import android.text.style.StyleSpan;
 import android.text.style.URLSpan;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.LinkedList;
 
@@ -31,6 +35,11 @@ public class MainActivity extends AppCompatActivity {
         mContext = MainActivity.this;
         list_animal = (ListView) findViewById(R.id.animal_list);
 
+        //动态加载顶部View和底部View
+        final LayoutInflater inflater = LayoutInflater.from(this);
+        View headView = inflater.inflate(R.layout.view_header, null, false);
+        View footView = inflater.inflate(R.layout.view_footer, null, false);
+
         mData = new LinkedList<>();
         mData.add(new Animals("fish", "I am A", R.drawable.pt1));
         mData.add(new Animals("dog", "I am B", R.drawable.pt2));
@@ -40,8 +49,20 @@ public class MainActivity extends AppCompatActivity {
         mData.add(new Animals("cat", "I am F", R.drawable.pt6));
         mData.add(new Animals("tiger", "I am G", R.drawable.pt7));
 
+//      addHeaderView方法必须放在listview.setAdapter前面，否则会报错。
+        list_animal.addHeaderView(headView);
+        list_animal.addFooterView(footView);
+
         mAnimalAdapter = new AnimalAdapter(mData, mContext);
         list_animal.setAdapter(mAnimalAdapter);
+
+        list_animal.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(MainActivity.this, "你点击了第" + position + "项", Toast.LENGTH_SHORT).show();
+            }
+        });
+
 
         TextView title = (TextView) findViewById(R.id.title);
 
