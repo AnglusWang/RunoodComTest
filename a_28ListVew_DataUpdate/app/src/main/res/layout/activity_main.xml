@@ -24,9 +24,32 @@
             android:text="在第x3后加入一条"/>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/del_obj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="根据对象删除数据"/>
+
+        <Button
+            android:id="@+id/del_pot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="根据位置删除数据"/>
+
+        <Button
+            android:id="@+id/del_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="移除所有数据"/>
+    </LinearLayout>
+
     <ListView
         android:id="@+id/list_one"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
     </ListView>
