@@ -42,16 +42,31 @@ public class AnimalAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        convertView = LayoutInflater.from(mContext)
-                .inflate(R.layout.animal_list, parent, false);
-        ImageView mIcon = (ImageView) convertView.findViewById(R.id.animal_icon);
-        TextView mName = (TextView) convertView.findViewById(R.id.animal_name);
-        TextView mSay = (TextView) convertView.findViewById(R.id.animal_say);
+        ViewHolder viewHolder;
+        if (convertView == null) {
 
-        mIcon.setBackgroundResource(mData.get(position).getaIcon());
-        mName.setText(mData.get(position).getaName());
-        mSay.setText(mData.get(position).getaSay());
+            convertView = LayoutInflater.from(mContext)
+                    .inflate(R.layout.animal_list, parent, false);
+
+            viewHolder = new ViewHolder();
+            viewHolder.mIcon = (ImageView) convertView.findViewById(R.id.animal_icon);
+            viewHolder.mName = (TextView) convertView.findViewById(R.id.animal_name);
+            viewHolder.mSay = (TextView) convertView.findViewById(R.id.animal_say);
+
+            convertView.setTag(viewHolder);
+        } else {
+            viewHolder = (ViewHolder) convertView.getTag();
+        }
+        viewHolder.mIcon.setBackgroundResource(mData.get(position).getaIcon());
+        viewHolder.mName.setText(mData.get(position).getaName());
+        viewHolder.mSay.setText(mData.get(position).getaSay());
 
         return convertView;
+    }
+
+    static class ViewHolder {
+        ImageView mIcon;
+        TextView mName;
+        TextView mSay;
     }
 }
