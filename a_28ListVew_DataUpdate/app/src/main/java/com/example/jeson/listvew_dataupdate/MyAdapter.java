@@ -71,6 +71,14 @@ public class MyAdapter extends BaseAdapter {
         notifyDataSetChanged();
     }
 
+    //往特定位置，添加一个元素
+    public void add(int position, Data data) {
+        if (mData == null) {
+            mData = new LinkedList<>();
+        }
+        mData.add(position, data);
+        notifyDataSetChanged();
+    }
     private class ViewHolder {
         ImageView img_icon;
         TextView text_content;

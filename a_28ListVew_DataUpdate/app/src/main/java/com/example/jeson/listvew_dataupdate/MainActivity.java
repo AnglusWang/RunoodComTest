@@ -18,7 +18,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private MyAdapter mMyAdapter;
 
     private Button bt_add;
-    private int flag = 0;
+    private Button index_add;
+    private int flag = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +35,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //动态添加
         bt_add = (Button) findViewById(R.id.add_data);
+        index_add = (Button) findViewById(R.id.index_add);
         bt_add.setOnClickListener(this);
+        index_add.setOnClickListener(this);
 
         mMyAdapter = new MyAdapter(mContext, mData);
         mListView.setAdapter(mMyAdapter);
@@ -50,6 +53,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.add_data:
                 mMyAdapter.add(new Data(R.drawable.photo1, "这个是Genymotion:~~~~~x" + flag));
+                flag ++;
+                break;
+            case R.id.index_add:
+                mMyAdapter.add(
+                  3, new Data(R.drawable.photo1, "这个是Genymotion:~~~~~x" + flag)
+                );
                 flag ++;
                 break;
         }
